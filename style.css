@@ -1,0 +1,177 @@
+/* --- General Styles --- */
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6fb;
+    color: #23272f;
+    line-height: 1.7;
+    font-size: 1.08rem;
+}
+
+/* --- Header --- */
+header {
+    background: linear-gradient(90deg, #22223b 60%, #4ea8de 100%);
+    color: #fff;
+    padding: 2.5em 0 1.5em 0;
+    text-align: center;
+    box-shadow: 0 2px 16px rgba(34,34,59,0.08);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+nav {
+    margin-top: 1.2em;
+}
+
+nav a {
+    color: #e0f2fe;
+    margin: 0 1.2em;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+    font-size: 1.08em;
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* --- Main Content --- */
+main {
+    max-width: 900px;
+    margin: 2.5em auto;
+    background: #fff;
+    padding: 2.5em 2em 1.5em 2em;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(34,34,59,0.07);
+}
+
+section {
+    margin-bottom: 2.8em;
+}
+
+h2 {
+    color: #4ea8de;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.4em;
+    font-size: 1.5em;
+    margin-bottom: 1.2em;
+    letter-spacing: 0.01em;
+}
+
+/* --- Profile Pic & Card --- */
+.profile-pic {
+    float: right;
+    width: 120px;
+    border-radius: 50%;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    border: 3px solid #4ea8de;
+    box-shadow: 0 2px 12px rgba(78,168,222,0.12);
+    transition: transform 0.2s;
+}
+.profile-pic:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+/* --- Timeline --- */
+ul.timeline {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5em;
+}
+
+ul.timeline li {
+    margin-bottom: 1em;
+    padding-left: 1.7em;
+    position: relative;
+    font-size: 1.04em;
+}
+
+ul.timeline li:before {
+    content: '\25CF';
+    position: absolute;
+    left: 0.2em;
+    top: 0.2em;
+    color: #4ea8de;
+    font-size: 1.1em;
+}
+
+/* --- Badges --- */
+ul.badges {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 1.2em;
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+}
+
+ul.badges li {
+    background: linear-gradient(90deg, #e0f2fe 60%, #b6e0fe 100%);
+    color: #0366d6;
+    padding: 0.5em 1.2em;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1em;
+    box-shadow: 0 1px 4px rgba(78,168,222,0.08);
+    transition: background 0.2s, color 0.2s;
+}
+ul.badges li:hover {
+    background: #4ea8de;
+    color: #fff;
+}
+
+/* --- Footer --- */
+footer {
+    background: #22223b;
+    color: #fff;
+    text-align: center;
+    padding: 1.2em 0;
+    margin-top: 2.5em;
+    font-size: 1em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -2px 12px rgba(34,34,59,0.07);
+}
+footer a {
+    color: #4ea8de;
+    margin: 0 0.5em;
+    text-decoration: none;
+    font-weight: 500;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #e0f2fe;
+}
+
+/* --- Links --- */
+a {
+    color: #0366d6;
+    transition: color 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #4ea8de;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 700px) {
+    main {
+        padding: 1.2em 0.5em 1em 0.5em;
+    }
+    .profile-pic {
+        float: none;
+        display: block;
+        margin: 0 auto 1.2em auto;
+    }
+    ul.badges {
+        flex-direction: column;
+        gap: 0.7em;
+        align-items: flex-start;
+    }
+}
